@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host
+Host: https://getlumis.app
+
+# Sitemaps
+Sitemap: https://getlumis.app/sitemap.xml

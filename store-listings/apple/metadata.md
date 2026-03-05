@@ -1,0 +1,190 @@
+# Apple App Store Listing — Lumis
+
+## App Store Connect Metadata
+
+### App Name
+Lumis — Personal Growth AI
+
+### Subtitle
+An AI that actually knows you
+
+### Category
+- Primary: Health & Fitness
+- Secondary: Lifestyle
+
+### Keywords (100 character limit)
+ai therapy,mental health,personal growth,mood tracker,ai companion,journal,self care,anxiety,wellness
+
+### Promotional Text (170 characters — can update without new build)
+Meet Lumis — the AI growth companion that remembers your story. Evidence-based support with long-term memory, available 24/7. Free to start.
+
+### Description
+
+Meet Lumis — an AI growth companion that actually knows you.
+
+Unlike chatbots that forget you after every session, Lumis remembers your story, your patterns, your relationships, and your goals. The longer you use it, the more valuable it becomes.
+
+WHAT MAKES LUMIS DIFFERENT
+
+• Long-Term Memory — Lumis remembers your story across every conversation. Session 100 feels like session 100, not session 1.
+
+• Evidence-Based Techniques — CBT, DBT, ACT, Motivational Interviewing, and Solution-Focused Brief Therapy — the same approaches used by licensed therapists.
+
+• Pattern Detection — Lumis notices patterns in your mood, behavior, and relationships that are invisible to you.
+
+• "In The Moment" SOS Mode — Panic attack at 2 AM? One tap gets immediate, personalized support with techniques that have worked for YOU before.
+
+• Session Echo — Every session produces real action items. Lumis follows up gently, holding you accountable to the growth you chose.
+
+• Voice Sessions — Talk naturally with Lumis. Sometimes typing isn't enough.
+
+• Growth Dashboard — See mood trends, track goals, and get a Monthly Wrapped that proves growth is happening.
+
+• Journal — Every session becomes a journal entry. Personalized prompts help you reflect deeper.
+
+• Your Companion — A gentle presence that evolves as you grow, celebrates your milestones, and reflects your journey.
+
+PRICING
+
+• Free — 3 sessions, daily mood check-ins, crisis support (always free)
+• Growth — $14.99/mo ($99.99/yr) — Unlimited sessions, memory, patterns, progress tracking
+• Growth+ — $24.99/mo ($179.99/yr) — Voice sessions, priority, advanced analytics
+
+PRIVACY FIRST
+
+Your conversations are encrypted and never sold. Period. You can export or delete all your data at any time. We never use your conversations for advertising or to train general AI models.
+
+IMPORTANT NOTICE
+
+Lumis is a wellness and personal growth companion. It is not a licensed therapist, medical device, or healthcare provider. It does not diagnose, treat, cure, or prevent any medical condition. If you are in crisis, please call 988 (Suicide & Crisis Lifeline) or text HOME to 741741 (Crisis Text Line).
+
+Feel understood. Grow for real.
+
+### What's New (v1.0.0)
+Welcome to Lumis! Your AI growth companion is here.
+
+• AI conversations with long-term memory
+• Voice sessions
+• "In The Moment" SOS crisis support
+• Session Echo action items with follow-ups
+• Daily mood check-ins
+• Growth dashboard with mood trends
+• Journal with personalized prompts
+• Companion character that grows with you
+
+We'd love to hear from you — tap the support button in Settings to share feedback.
+
+---
+
+## URLs
+
+- Privacy URL: https://getlumis.app/privacy
+- Support URL: https://getlumis.app/support
+- Marketing URL: https://getlumis.app
+
+---
+
+## Age Rating
+
+**Rating: 12+**
+- Infrequent/Mild Medical/Treatment Information: YES
+- All other categories: NO
+
+Justification: The app provides wellness-oriented conversations using evidence-based techniques. It does not provide medical diagnosis or treatment but discusses wellness topics.
+
+---
+
+## Privacy Nutrition Labels
+
+### Data Linked to You
+| Data Type | Purpose |
+|-----------|---------|
+| Email Address | App Functionality, Account |
+| User ID | App Functionality, Account |
+| Health & Fitness (mood data) | App Functionality |
+
+### Data Not Linked to You
+| Data Type | Purpose |
+|-----------|---------|
+| Crash Data | App Functionality |
+| Performance Data | Analytics |
+| Product Interaction | Analytics |
+
+### Data Used for Tracking
+None.
+
+### Data Collection Practices
+- Conversations: Collected, linked to user, used for app functionality (long-term memory)
+- Mood data: Collected, linked to user, used for app functionality (growth dashboard)
+- Analytics: Collected, not linked to user, used for product improvement
+- Crash reports: Collected, not linked to user, used for stability
+
+---
+
+## App Review Notes
+
+### Demo Account
+Email: review@getlumis.app
+Password: [PROVIDE_BEFORE_SUBMISSION]
+
+### Notes for Reviewer
+
+Lumis is an AI-powered wellness and personal growth companion. Key points for review:
+
+1. **Not a medical device:** Lumis is positioned as a wellness companion, not a therapist or medical provider. Clear disclaimers are present throughout the app, onboarding, and App Store listing.
+
+2. **AI-generated content:** All conversational content is generated by Claude (Anthropic). The AI uses evidence-based wellness techniques (CBT, DBT, ACT, MI, SFBT) but does not diagnose or prescribe.
+
+3. **Crisis handling:** The app includes multi-layer crisis detection. When potential crisis is detected, professional resources (988 Lifeline, Crisis Text Line) are surfaced immediately. Crisis support is always free regardless of subscription status.
+
+4. **Subscription model:** Free tier (3 sessions), Growth ($14.99/mo), Growth+ ($24.99/mo). Managed through RevenueCat + StoreKit 2. 14-day free trial for paid tiers.
+
+5. **Data privacy:** All conversations encrypted in transit (TLS 1.3) and at rest (AES-256). No data is sold. Users can export or delete data at any time.
+
+6. **Minimum age:** 12+ with parental guidance recommended. Under-13 users cannot create accounts (enforced during onboarding).
+
+---
+
+## Screenshots Specification
+
+### Required Sizes
+- 6.7" (iPhone 15 Pro Max): 1290 x 2796 px
+- 6.5" (iPhone 14 Plus): 1284 x 2778 px
+- 5.5" (iPhone 8 Plus): 1242 x 2208 px
+
+### Screenshot 1: Hero / Chat with Memory
+- Show: Active chat conversation where Lumis references a past session
+- Caption: "An AI that actually remembers you"
+- Background: Brand gradient (purple to dark)
+
+### Screenshot 2: In The Moment SOS
+- Show: SOS mode screen with breathing exercise
+- Caption: "There when nothing else is"
+- Background: Warm dark with subtle crisis accent
+
+### Screenshot 3: Growth Dashboard
+- Show: Mood trends chart, weekly summary, progress stats
+- Caption: "See your growth in real time"
+- Background: Dark with teal accents
+
+### Screenshot 4: Session Echo
+- Show: Action items list with check marks and follow-up
+- Caption: "From insight to action"
+- Background: Dark with gold accents
+
+### Screenshot 5: Companion
+- Show: Companion character with glow animation, evolution progress
+- Caption: "A companion that grows with you"
+- Background: Purple gradient
+
+### Screenshot 6: Monthly Wrapped
+- Show: Monthly wrapped card with stats (sessions, mood trend, goals)
+- Caption: "Your growth story, month by month"
+- Background: Brand gradient with shareable card format
+
+### Design Guidelines
+- Use Inter Bold for captions (48-60pt)
+- Place device mockup centered or slightly offset
+- Maintain brand colors: #0C1120 bg, #7C3AED purple, #2DD4BF teal
+- No more than 6 words per caption
+- Show real app content, not mockups where possible
