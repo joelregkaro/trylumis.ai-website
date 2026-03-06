@@ -1,13 +1,10 @@
-const port = process.env.PORT || 3002;
-const hostname = process.env.HOSTNAME || "127.0.0.1";
-
 module.exports = {
   apps: [
     {
       name: "lumis-web",
       cwd: __dirname,
       script: "npm",
-      args: `start -- --hostname ${hostname} --port ${port}`,
+      args: "start -- --hostname 0.0.0.0 --port 3002",
       exec_mode: "fork",
       instances: 1,
       autorestart: true,
@@ -17,8 +14,6 @@ module.exports = {
       max_memory_restart: "512M",
       env: {
         NODE_ENV: "production",
-        PORT: port,
-        HOSTNAME: hostname,
       },
     },
   ],
