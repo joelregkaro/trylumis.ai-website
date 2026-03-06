@@ -1,4 +1,4 @@
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
 const hostname = process.env.HOSTNAME || "127.0.0.1";
 
 module.exports = {
