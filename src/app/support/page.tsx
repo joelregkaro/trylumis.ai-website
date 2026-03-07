@@ -69,7 +69,7 @@ export default function SupportPage() {
         </div>
       </Section>
 
-      <Section className="bg-bg-surface/30">
+      <Section id="get-in-touch" className="bg-bg-surface/30">
         <div className="max-w-4xl mx-auto">
           <SectionHeader
             title="Get in Touch"

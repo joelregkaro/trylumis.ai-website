@@ -9,7 +9,7 @@ const footerLinks = {
   ],
   Support: [
     { label: "Help Center", href: "/support" },
-    { label: "Contact", href: `mailto:${SITE_CONFIG.email}` },
+    { label: "Contact", href: "/support#get-in-touch" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy" },
