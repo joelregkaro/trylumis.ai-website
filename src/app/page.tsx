@@ -347,6 +347,22 @@ function CtaSection() {
             </a>
             .
           </p>
+          <p className="mt-2 text-xs text-text-tertiary">
+            you can also reach to us at{" "}
+            <a
+              href="mailto:surbhi@trylumin.ai"
+              className="text-status-crisis hover:underline font-medium"
+            >
+              surbhi@trylumin.ai
+            </a>{" "}
+            or call us at{" "}
+            <a
+              href="tel:+919220402925"
+              className="text-status-crisis hover:underline font-medium"
+            >
+              +91 9220402925
+            </a>
+          </p>
         </motion.div>
       </div>
     </Section>
