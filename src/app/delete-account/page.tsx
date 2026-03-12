@@ -107,10 +107,10 @@ export default function DeleteAccountPage() {
               If you&apos;re unable to access the app or need assistance
               deleting your account, contact us at{" "}
               <a
-                href="mailto:privacy@getlumis.app"
+                href="mailto:support@trylumis.chat"
                 className="text-brand-purple hover:underline"
               >
-                privacy@getlumis.app
+                support@trylumis.chat
               </a>{" "}
               with the email address associated with your account and we will
               process your request.
