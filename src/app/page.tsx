@@ -39,82 +39,87 @@ export default function HomePage() {
 
 function OrbHero() {
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden flex flex-col items-center justify-center pt-20 pb-12 px-6">
-      {/* Top tagline */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="text-center mb-6"
-      >
-        <p className="text-sm font-medium text-brand-purple/80 tracking-[0.3em] uppercase">
-          Your AI Growth Companion
-        </p>
-      </motion.div>
-
-      {/* Contained orb */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-        className="relative w-full max-w-md md:max-w-lg aspect-square"
-      >
+    <section className="relative min-h-screen bg-black overflow-hidden">
+      {/* Full-screen orb canvas */}
+      <div className="absolute inset-0">
         <LumisOrb className="w-full h-full" autoTransition />
-      </motion.div>
+      </div>
 
-      {/* Text content below orb */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="text-center max-w-3xl mx-auto -mt-8 relative z-10"
-      >
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-          <span className="text-white">Feel understood.</span>
-          <br />
-          <span className="bg-gradient-to-r from-brand-purple via-brand-purple-light to-brand-teal bg-clip-text text-transparent">
-            Grow for real.
-          </span>
-        </h1>
-        <p className="mt-5 text-base md:text-lg text-white/50 max-w-xl mx-auto leading-relaxed">
-          {SITE_CONFIG.subtitle}. Lumis remembers your story, notices your
-          patterns, and supports you when nothing else can.
-        </p>
+      {/* Gradient overlays for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 pointer-events-none lg:hidden" />
 
-        <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
-          <DownloadBadge store="apple" />
-          <DownloadBadge store="google" />
-        </div>
-
-        <p className="mt-4 text-xs text-white/25">
-          Free to start. No credit card required.
-        </p>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="mt-8"
-      >
+      {/* Content overlay */}
+      <div className="relative z-10 min-h-screen flex flex-col justify-between pt-24 pb-12">
+        {/* Top tagline */}
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="text-center px-6"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            className="text-white/20"
-          >
-            <path d="M19 9l-7 7-7-7" />
-          </svg>
+          <p className="text-sm font-medium text-brand-purple/80 tracking-[0.3em] uppercase">
+            Your AI Growth Companion
+          </p>
         </motion.div>
-      </motion.div>
+
+        {/* Center — empty space for the orb */}
+        <div className="flex-1" />
+
+        {/* Bottom content */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-center px-6 max-w-3xl mx-auto"
+        >
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+            <span className="text-white">Feel understood.</span>
+            <br />
+            <span className="bg-gradient-to-r from-brand-purple via-brand-purple-light to-brand-teal bg-clip-text text-transparent">
+              Grow for real.
+            </span>
+          </h1>
+          <p className="mt-5 text-base md:text-lg text-white/50 max-w-xl mx-auto leading-relaxed">
+            {SITE_CONFIG.subtitle}. Lumis remembers your story, notices your
+            patterns, and supports you when nothing else can.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
+            <DownloadBadge store="apple" />
+            <DownloadBadge store="google" />
+          </div>
+
+          <p className="mt-4 text-xs text-white/25">
+            Free to start. No credit card required.
+          </p>
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 1 }}
+          className="mt-8 flex justify-center"
+        >
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              className="text-white/20"
+            >
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }
@@ -255,14 +260,10 @@ function HowItWorks() {
 function CompanionSection() {
   return (
     <section className="relative py-32 bg-black overflow-hidden">
-      {/* Ambient glow background */}
-      <div className="absolute inset-0 flex items-center justify-end pr-[10%]">
-        <div className="relative w-[400px] h-[400px] md:w-[500px] md:h-[500px]">
-          <div className="absolute inset-0 rounded-full bg-brand-purple/15 blur-[100px] animate-pulse" />
-          <div className="absolute inset-8 rounded-full bg-brand-teal/10 blur-[80px] animate-pulse" style={{ animationDelay: "1s" }} />
-          <div className="absolute inset-16 rounded-full bg-brand-purple-light/8 blur-[60px] animate-pulse" style={{ animationDelay: "2s" }} />
-        </div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <LumisOrb className="w-full h-full max-w-2xl max-h-[600px]" mood="peaceful" autoTransition={false} />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="max-w-xl">
