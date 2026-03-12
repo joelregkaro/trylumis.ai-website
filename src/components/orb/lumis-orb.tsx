@@ -2,8 +2,6 @@
 
 import { useRef, useMemo, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
-import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 import { vertexShader, fragmentShader } from "./shaders";
 
@@ -196,7 +194,7 @@ function OrbMesh({ mood }: OrbMeshProps) {
 
   return (
     <mesh ref={meshRef} scale={2.0}>
-      <icosahedronGeometry args={[1, 200]} />
+      <icosahedronGeometry args={[1, 64]} />
       <shaderMaterial
         vertexShader={vertexShader}
         fragmentShader={fragmentShader}
@@ -217,17 +215,6 @@ function Scene({ mood }: { mood: MoodKey }) {
       <pointLight position={[0, -5, -5]} intensity={0.1} color="#A78BFA" />
 
       <OrbMesh mood={mood} />
-
-      <Environment preset="night" />
-
-      <EffectComposer>
-        <Bloom
-          intensity={0.8}
-          luminanceThreshold={0.3}
-          luminanceSmoothing={0.9}
-          mipmapBlur
-        />
-      </EffectComposer>
     </>
   );
 }
