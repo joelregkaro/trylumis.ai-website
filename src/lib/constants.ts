@@ -14,56 +14,8 @@ export const SITE_CONFIG = {
 
 export const NAV_LINKS = [
   { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
   { label: "Blog", href: "/blog" },
   { label: "Support", href: "/support" },
-];
-
-export const PRICING_TIERS = [
-  {
-    name: "Free",
-    price: { monthly: 0, annual: 0 },
-    description: "Start your growth journey",
-    features: [
-      "3 AI sessions",
-      "Daily mood check-ins",
-      "Crisis support (always free)",
-      "Basic insights",
-    ],
-    cta: "Get Started",
-    highlighted: false,
-  },
-  {
-    name: "Growth",
-    price: { monthly: 14.99, annual: 99.99 },
-    description: "For those ready to grow",
-    features: [
-      "Unlimited AI sessions",
-      "Long-term memory",
-      "Pattern detection",
-      "Session Echo action items",
-      "Growth dashboard",
-      "Monthly Wrapped",
-      "Journal + mood trends",
-    ],
-    cta: "Start Free Trial",
-    highlighted: true,
-  },
-  {
-    name: "Growth+",
-    price: { monthly: 24.99, annual: 179.99 },
-    description: "The complete experience",
-    features: [
-      "Everything in Growth",
-      "Voice sessions",
-      "Priority responses",
-      "Advanced analytics",
-      "Relationship mapping",
-      "Early access to new features",
-    ],
-    cta: "Start Free Trial",
-    highlighted: false,
-  },
 ];
 
 export const FEATURES = [

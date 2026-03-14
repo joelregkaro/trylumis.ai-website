@@ -29,28 +29,12 @@ export function SoftwareAppJsonLd() {
     name: "Lumis — Personal Growth AI",
     applicationCategory: "HealthApplication",
     operatingSystem: "iOS, Android",
-    offers: [
-      {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        description: "Free tier — 3 sessions, mood check-ins, crisis support",
-      },
-      {
-        "@type": "Offer",
-        price: "14.99",
-        priceCurrency: "USD",
-        description:
-          "Growth — Unlimited sessions, memory, patterns, progress",
-      },
-      {
-        "@type": "Offer",
-        price: "24.99",
-        priceCurrency: "USD",
-        description:
-          "Growth+ — Voice, priority, advanced analytics",
-      },
-    ],
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      description: "Free to download with in-app purchases available",
+    },
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
   };

@@ -4,7 +4,6 @@ import { SITE_CONFIG } from "@/lib/constants";
 const footerLinks = {
   Product: [
     { label: "Features", href: "/features" },
-    { label: "Pricing", href: "/pricing" },
     { label: "Blog", href: "/blog" },
   ],
   Support: [
